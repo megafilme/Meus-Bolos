@@ -133,5 +133,24 @@ body {
   transform: scale(1.1);
 }
 
-  
+  .container {
+  max-width: 100%;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  box-sizing: border-box; /* Inclua esta propriedade para considerar a largura do padding e da borda na largura total */
+}
+.grid-item img {
+  width: 100%;
+  height: auto; /* Para manter a proporção da imagem */
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
   
