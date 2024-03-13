@@ -13,10 +13,11 @@
       margin: 0;
       padding: 0;
       background-color: #f8f8f8;
-      background-image: url('foto-capa-do-bolo-site.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      overflow: hidden; /* Evita a barra de rolagem horizontal */
+      background-image: url('foto\ capa\ do\ bolo\ site.jpg'); /* Adicione o caminho para sua imagem aqui */
+      background-size: cover; /* Cobrir todo o fundo */
+      background-position: center; /* Centralizar a imagem */
+      background-repeat: no-repeat; /* Não repetir a imagem */
     }
 
     .container {
@@ -26,77 +27,94 @@
       background-color: #fff;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      position: relative;
+      text-align: center; /* Centralizar conteúdo */
+      position: relative; /* Para posicionar a bolinha e os quadradinhos */
     }
 
     h1 {
       color: #333;
-      margin-bottom: 20px;
-      filter: brightness(90%);
+      margin-bottom: 20px; /* Espaço abaixo do título */
+      filter: brightness(90%); /* Filtro de brilho */
     }
 
+    /* Estilos para a seção de links */
     #link-list {
-      margin-top: 10px;
-      margin-bottom: 20px;
-      margin-left: auto;
+      margin-top: 10px; /* Espaço de 10px acima da lista */
+      margin-bottom: 20px; /* Espaço abaixo da lista */
+      margin-left: auto; /* Centralizar os links horizontalmente */
       margin-right: auto;
       padding: 0;
       list-style-type: none;
       text-align: center;
     }
 
+    /* Estilo para cada link */
     .blue-link a {
       display: block;
       padding: 10px;
-      background-color: #007bff;
+      background-color: #007bff; /* Azul */
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
       margin-bottom: 10px;
-      filter: contrast(90%);
+      filter: contrast(90%); /* Filtro de contraste */
     }
 
     .pink-link a {
       display: block;
       padding: 10px;
-      background-color: #ff69b4;
+      background-color: #ff69b4; /* Rosa */
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
       margin-bottom: 10px;
-      filter: hue-rotate(90deg);
+      filter: hue-rotate(90deg); /* Filtro de rotação de matiz */
     }
 
     .green-link a {
       display: block;
       padding: 10px;
-      background-color: #28a745;
+      background-color: #28a745; /* Verde */
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
       margin-bottom: 10px;
-      filter: saturate(150%);
+      filter: saturate(150%); /* Filtro de saturação */
     }
 
+    /* Estilo de hover para todos os links */
     #link-list li a:hover {
-      background-color: #0056b3;
+      background-color: #0056b3; /* Mudança de cor ao passar o mouse */
     }
 
     .logo {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 20px; /* Espaço acima da logo */
+      margin-bottom: 20px; /* Espaço abaixo da logo */
       width: 150px;
       border-radius: 50%;
     }
 
+    /* Estilos para a mensagem de boas-vindas */
+    #welcome-message {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 1000;
+      display: none; /* Inicialmente escondido */
+    }
+
+    /* Estilos para a bolinha */
     .circle {
       position: absolute;
       bottom: 10px;
       right: 10px;
       width: 100px;
       height: 100px;
-      background-color: rgba(0, 123, 255, 0.5);
+      background-color: rgba(0, 123, 255, 0.5); /* Transparente com 50% de opacidade */
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -106,6 +124,7 @@
       text-align: center;
     }
 
+    /* Estilos para os quadradinhos das fotos */
     .grid-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -114,9 +133,9 @@
     }
 
     .grid-item {
-      width: 150px;
-      height: 150px;
-      overflow: hidden;
+      width: 150px; /* Tamanho igual à largura da logo */
+      height: 150px; /* Tamanho igual à largura da logo */
+      overflow: hidden; /* Para esconder partes da imagem que ultrapassam o quadradinho */
       border-radius: 50%;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
@@ -132,50 +151,20 @@
     .grid-item:hover img {
       transform: scale(1.1);
     }
-
-    /* Media queries para ajustes em dispositivos móveis */
-    @media only screen and (max-width: 600px) {
-      .container {
-        padding: 10px;
-      }
-
-      .logo {
-        width: 100px;
-      }
-
-      h1 {
-        font-size: 24px;
-      }
-
-      .blue-link a,
-      .pink-link a,
-      .green-link a {
-        padding: 8px;
-        margin-bottom: 8px;
-      }
-
-      .circle {
-        width: 80px;
-        height: 80px;
-        font-size: 10px;
-      }
-
-      .grid-item {
-        width: 100px;
-        height: 100px;
-      }
-    }
   </style>
 </head>
 <body>
   <div id="welcome-message">Bem-vindo ao Linktree de Amanda Mocellin</div>
   <div class="container">
-    <img class="logo" src="foto-da-logo.jpg" alt="Logo da Linguagem Do Amor Doceria">
+    <img class="logo" src="foto da logo..jpg" alt="Logo da Linguagem Do Amor Doceria">
     <h1>Linguagem Do Amor Doceria</h1>
     <ul id="link-list">
       <li class="blue-link"><a href="https://www.instagram.com/confeitaria.bcakes?igsh=OTgyYjZteHRlZTJv">Instagram</a></li>
       <li class="pink-link"><a href="https://www.google.com/search?client=ms-android-samsung-rvo1&sca_esv=52b056e1a97f92b3&hl=pt-BR&cs=0&sxsrf=ACQVn093LWyo7Hr4xqa3mawWWXn8BwSGFg:1710292999308&q=Confeitaria+Artesanal+B%27Cakes&ludocid=13615941142701916197&ibp=gwp;0,7&lsig=AB86z5V_kkRyrbBp7PHzxUJTLU_C&kgs=ef1a4f748a71759d&shndl=-1&shem=lcsnce,lsp&source=sh/x/loc/act/m1/4#lpg=cid:CgIgAQ%3D%3D">Google</a></li>
       <li class="green-link"><a href="https://wa.me/5541998677950">WhatsApp: (41) 99867-7950</a></li>
+
+
+
       <!-- Adicione mais links conforme necessário -->
     </ul>
 
@@ -188,8 +177,8 @@
     <div class="grid-container">
       <!-- Adicione as fotos aqui -->
       <div class="grid-item"><img src="IMG-20240309-WA0019.jpg" alt="Foto 1"></div>
-      <div class="grid-item"><img src="bolo-foto.jpg" alt="Foto 2"></div>
-      <div class="grid-item"><img src="foto-de-frente.jpg" alt="Foto 3"></div>
+      <div class="grid-item"><img src="bolo foto.jpg" alt="Foto 2"></div>
+      <div class="grid-item"><img src="foto de frente.jpg" alt="Foto 3"></div>
       <!-- Adicione mais quadradinhos conforme necessário -->
     </div>
   </div>
