@@ -20,5 +20,118 @@ body {
   }
   
   /* Estilos específicos para a seção de links estão no HTML */
+/* Estilos CSS para a página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  overflow: hidden; /* Evita a barra de rolagem horizontal */
+  background-image: url('foto\ capa\ do\ bolo\ site.jpg'); /* Adicione o caminho para sua imagem aqui */
+  background-size: cover; /* Cobrir todo o fundo */
+  background-position: center; /* Centralizar a imagem */
+  background-repeat: no-repeat; /* Não repetir a imagem */
+}
+
+.container {
+  max-width: 90%; /* Alterado para porcentagem para ser responsivo */
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centralizar conteúdo */
+  position: relative; /* Para posicionar a bolinha e os quadradinhos */
+}
+
+/* Estilos para a seção de links */
+#link-list {
+  margin-top: 10px; /* Espaço de 10px acima da lista */
+  margin-bottom: 20px; /* Espaço abaixo da lista */
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* Estilo para cada link */
+.blue-link a, .pink-link a, .green-link a {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilo de hover para todos os links */
+#link-list li a:hover {
+  background-color: #0056b3; /* Mudança de cor ao passar o mouse */
+}
+
+.logo {
+  margin: 20px auto; /* Centralizar a logo */
+  width: 100%; /* Alterado para ocupar toda a largura do container */
+  max-width: 150px; /* Limitando a largura máxima */
+  border-radius: 50%;
+}
+
+/* Estilos para a mensagem de boas-vindas */
+#welcome-message {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  display: none; /* Inicialmente escondido */
+}
+
+/* Estilos para a bolinha */
+.circle {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 123, 255, 0.5); /* Transparente com 50% de opacidade */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Estilos para os quadradinhos das fotos */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adaptação automática de colunas */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  width: 100%; /* Alterado para ocupar toda a largura do container */
+  height: 150px; /* Tamanho igual à largura da logo */
+  overflow: hidden; /* Para esconder partes da imagem que ultrapassam o quadradinho */
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
   
   
