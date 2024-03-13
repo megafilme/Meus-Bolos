@@ -152,5 +152,24 @@ body {
   border-radius: 50%;
   transition: transform 0.3s ease-in-out;
 }
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.grid-item {
+  width: 100%; /* Ocupa toda a largura do container */
+  max-width: 200px; /* Define o tamanho máximo para cada quadradinho */
+  margin: 10px auto; /* Centraliza e adiciona espaçamento entre os quadradinhos */
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto; /* Para manter a proporção da imagem */
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
 
   
