@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Linguagem Do Amor Doceria</title>
-  <link rel="stylesheet" href="style.css"> <!-- Estilo CSS para a página -->
+  <link rel="stylesheet" href="site.css"> <!-- Estilo CSS para a página -->
 
   <style>
     /* Reset de estilos */
@@ -105,6 +105,21 @@
     .grid-item:hover img {
       transform: scale(1.1);
     }
+
+    /* Media queries para ajustes em dispositivos móveis */
+    @media only screen and (max-width: 600px) {
+      .container {
+        padding: 10px; /* Reduz o espaçamento */
+      }
+
+      .logo {
+        width: 100px; /* Reduz o tamanho da logo */
+      }
+
+      .grid-item {
+        width: calc(50% - 10px); /* Dois quadradinhos por linha */
+      }
+    }
   </style>
 </head>
 <body>
@@ -128,3 +143,4 @@
   </div>
 </body>
 </html>
+
