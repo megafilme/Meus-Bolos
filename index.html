@@ -131,13 +131,27 @@
         grid-template-columns: 1fr; /* Ajusta para 1 coluna em telas pequenas */
       }
     }
+
+    /* Estilos para o título da doceria */
+    .brand-name {
+      font-size: 36px; /* Tamanho maior para o título */
+      font-weight: bold; /* Texto em negrito */
+      color: #333; /* Cor do texto */
+      filter: brightness(90%);
+    }
+
+    /* Estilos para o texto "Um Pouco do Meu Trabalho" */
+    .work-description {
+      font-weight: bold; /* Texto em negrito */
+      color: #000; /* Cor preta */
+    }
   </style>
 </head>
 <body>
   <div id="welcome-message">Bem-vindo ao Linktree de Amanda Mocellin</div>
   <div class="container">
     <img class="logo" src="foto da logo..jpg" alt="Logo da Linguagem Do Amor Doceria">
-    <h1>Linguagem Do Amor Doceria</h1>
+    <h1 class="brand-name">Linguagem Do Amor Doceria</h1>
     <ul id="link-list">
       <li class="link-item blue-link"><a href="https://www.instagram.com/linguagemdoamor_doceria?igsh=OTgyYjZteHRlZTJv">Instagram</a></li>
       <li class="link-item pink-link"><a href="https://www.google.com/search?client=ms-android-samsung-rvo1&sca_esv=52b056e1a97f92b3&hl=pt-BR&cs=0&sxsrf=ACQVn093LWyo7Hr4xqa3mawWWXn8BwSGFg:1710292999308&q=Confeitaria+Artesanal+B%27Cakes&ludocid=13615941142701916197&ibp=gwp;0,7&lsig=AB86z5V_kkRyrbBp7PHzxUJTLU_C&kgs=ef1a4f748a71759d&shndl=-1&shem=lcsnce,lsp&source=sh/x/loc/act/m1/4#lpg=cid:CgIgAQ%3D%3D">Google</a></li>
@@ -147,7 +161,7 @@
 
     <!-- Bolinha com texto -->
     <div class="circle">
-      Um Pouco do Meu Trabalho
+      <p class="work-description">Um Pouco do Meu Trabalho</p>
     </div>
 
     <!-- Quadradinhos das fotos -->
