@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Linguagem Do Amor Doceria</title>
+  <link rel="stylesheet" href="site.css"> <!-- Estilo CSS para a página -->
+
   <style>
+    /* Estilos CSS para a página */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f8f8f8;
-      background-image: url('foto\ capa\ do\ bolo\ site.jpg');
-      background-size: 100% auto; /* Ajuste para dispositivos móveis */
+      background-image: url('foto\ capa\ do\ bolo\ site.jpg'); /* Caminho para sua imagem */
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment: fixed; /* Mantém a imagem de fundo fixa */
     }
 
     .container {
@@ -34,7 +36,107 @@
       filter: brightness(90%);
     }
 
-    /* Outros estilos aqui */
+    /* Estilos para a seção de links */
+    #link-list {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding: 0;
+      list-style-type: none;
+      text-align: center;
+    }
+
+    /* Estilo para cada link */
+    .link-item a {
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #fff;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .blue-link a {
+      background-color: #007bff;
+    }
+
+    .pink-link a {
+      background-color: #ff69b4;
+    }
+
+    .green-link a {
+      background-color: #28a745;
+    }
+
+    /* Estilo de hover para todos os links */
+    .link-item a:hover {
+      background-color: #0056b3;
+    }
+
+    .logo {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    /* Estilos para a mensagem de boas-vindas */
+    #welcome-message {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 1000;
+      display: none;
+    }
+
+    /* Estilos para a bolinha */
+    .circle {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 100px;
+      height: 100px;
+      background-color: rgba(0, 123, 255, 0.5);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* Estilos para os quadradinhos das fotos */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .grid-item {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .grid-item:hover img {
+      transform: scale(1.1);
+    }
 
     /* Estilos para telas menores, como smartphones */
     @media only screen and (max-width: 600px) {
