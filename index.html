@@ -118,7 +118,8 @@
       width: 150px;
       height: 150px;
       overflow: hidden;
-      border-radius: 50%;
+      border-radius: 8px; /* Ajuste para a moldura dos quadradinhos */
+      border: 2px solid #333; /* Cor da moldura */
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
@@ -146,8 +147,9 @@
       }
 
       .grid-item {
-        width: 100px; /* Reduzir o tamanho dos quadradinhos */
-        height: 100px;
+        width: calc(100% - 20px); /* Largura total menos o espaçamento */
+        height: 150px; /* Manter a altura */
+        margin: 10px auto; /* Centralizar na tela */
       }
     }
   </style>
