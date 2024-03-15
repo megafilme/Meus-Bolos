@@ -16,7 +16,7 @@
     }
 
     .container {
-      max-width: 100%; /* Ajuste para telas menores */
+      max-width: 800px; /* Tamanho máximo para desktops */
       margin: 50px auto;
       padding: 20px;
       background-color: #fff;
@@ -138,16 +138,15 @@
     /* Estilos para telas menores, como smartphones */
     @media only screen and (max-width: 600px) {
       .container {
-        max-width: 100%;
-        margin: 20px auto; /* Margem menor para telas pequenas */
+        padding: 10px; /* Reduzir o espaçamento */
       }
 
       .logo {
         width: 80px; /* Reduzir ainda mais o tamanho da logo */
       }
 
-      .grid-item {
-        width: 100%; /* Largura total para ocupar a tela */
+      .grid-container {
+        grid-template-columns: 1fr; /* Ajusta para 1 coluna em telas pequenas */
       }
 
       .circle {
