@@ -16,7 +16,7 @@
     }
 
     .container {
-      max-width: 800px;
+      max-width: 100%; /* Ajuste para telas menores */
       margin: 50px auto;
       padding: 20px;
       background-color: #fff;
@@ -34,7 +34,7 @@
 
     /* Estilos para a seção de links */
     #link-list {
-      margin-top: 10px;
+      margin-top: 20px; /* Aumenta o espaçamento */
       margin-bottom: 20px;
       padding: 0;
       list-style-type: none;
@@ -46,7 +46,7 @@
       display: block;
       padding: 10px;
       border-radius: 5px;
-      margin-bottom: 10px;
+      margin-bottom: 15px; /* Aumenta o espaçamento entre os links */
       text-decoration: none;
       color: #fff;
       transition: background-color 0.3s ease-in-out;
@@ -72,7 +72,7 @@
     .logo {
       margin-top: 20px;
       margin-bottom: 20px;
-      width: 150px;
+      width: 120px; /* Reduzir o tamanho da logo */
       border-radius: 50%;
     }
 
@@ -109,16 +109,17 @@
     /* Estilos para os quadradinhos das fotos */
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas em telas menores */
       gap: 10px;
       margin-top: 20px;
     }
 
     .grid-item {
-      width: 150px;
+      width: 100%;
       height: 150px;
       overflow: hidden;
-      border-radius: 50%;
+      border-radius: 8px; /* Ajuste para a moldura dos quadradinhos */
+      border: 2px solid #333; /* Cor da moldura */
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
@@ -142,44 +143,17 @@
       }
 
       .logo {
-        width: 100px; /* Reduzir o tamanho da logo */
+        width: 80px; /* Reduzir ainda mais o tamanho da logo */
       }
 
       .grid-item {
-        width: 100px; /* Reduzir o tamanho dos quadradinhos */
-        height: 100px;
+        width: 100%; /* Largura total para ocupar a tela */
       }
 
-      /* Estilos para o menu dropdown */
-      .dropdown {
-        position: relative;
-        display: inline-block;
-        margin-top: 10px;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        text-align: left;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .dropdown-item a {
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        color: #333;
-      }
-
-      .dropdown-item a:hover {
-        background-color: #f1f1f1;
+      .circle {
+        width: 80px; /* Reduzir o tamanho da bolinha */
+        height: 80px;
+        font-size: 10px; /* Reduzir o tamanho do texto */
       }
     }
   </style>
@@ -209,14 +183,6 @@
       <div class="grid-item"><img src="foto de frente.jpg" alt="Foto 3"></div>
       <!-- Adicione mais quadradinhos conforme necessário -->
     </div>
-
-    <!-- Menu Dropdown para Celulares -->
-    <div class="dropdown">
-      <div class="dropdown-content">
-        <div class="dropdown-item"><a href="#">Em breve</a></div>
-        <div class="dropdown-item"><a href="#">Ifood</a></div>
-      </div>
-    </div>
   </div>
 
   <script>
@@ -232,6 +198,7 @@
   </script>
 </body>
 </html>
+
 
 
 
