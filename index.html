@@ -118,8 +118,7 @@
       width: 150px;
       height: 150px;
       overflow: hidden;
-      border-radius: 8px; /* Ajuste para a moldura dos quadradinhos */
-      border: 2px solid #333; /* Cor da moldura */
+      border-radius: 50%;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
@@ -147,9 +146,40 @@
       }
 
       .grid-item {
-        width: calc(100% - 20px); /* Largura total menos o espaçamento */
-        height: 150px; /* Manter a altura */
-        margin: 10px auto; /* Centralizar na tela */
+        width: 100px; /* Reduzir o tamanho dos quadradinhos */
+        height: 100px;
+      }
+
+      /* Estilos para o menu dropdown */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: 10px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        text-align: left;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-item a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: #333;
+      }
+
+      .dropdown-item a:hover {
+        background-color: #f1f1f1;
       }
     }
   </style>
@@ -179,6 +209,14 @@
       <div class="grid-item"><img src="foto de frente.jpg" alt="Foto 3"></div>
       <!-- Adicione mais quadradinhos conforme necessário -->
     </div>
+
+    <!-- Menu Dropdown para Celulares -->
+    <div class="dropdown">
+      <div class="dropdown-content">
+        <div class="dropdown-item"><a href="#">Em breve</a></div>
+        <div class="dropdown-item"><a href="#">Ifood</a></div>
+      </div>
+    </div>
   </div>
 
   <script>
@@ -194,6 +232,7 @@
   </script>
 </body>
 </html>
+
 
 
 
